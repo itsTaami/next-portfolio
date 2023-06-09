@@ -1,0 +1,64 @@
+.Container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: salmon;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    font-size: 50px;
+    color: #000;
+  }
+}
+
+.border {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  background-image: conic-gradient(#1e2128, #ffff, #743ff1, #4801ff);
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-name: anime1;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+.ImgContainer {
+  position: absolute;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+@keyframes anime1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ImgContainer > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.Icons {
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  gap: 10px;
+}
